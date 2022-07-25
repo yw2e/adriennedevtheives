@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&subset=cyrillic'&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="assets\css\style.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<title>THIEVESLIST NFT</title>
+</head>
+
+<body>
+
+	<!-- Шапка -->
+	<div class="sticky-header">
+		<header class="header wrap">
+			<div class="logo" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+				<a class="__link-item" href="/">
+					<picture>
+						<source srcset="assets\images\png\logo.png" media="(max-width: 278px)" />
+					 <h2>	THIEVESLIST	</h2>
+					</picture>
+				</a>
+			</div>
+			<nav class="header__nav">
+				<ul class="header__nav anchor-links">
+					<li data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50">
+						<a class="__link-item" href="#roadmap">Mint date (TBA)
+					</li>
+					<li data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="100">
+						<a class="__link-item" href="#team"></a>
+					</li>
+					<li data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="150">
+						<a class="__link-item" href="#que-ans"></a>
+					</li>
+					<li data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200">
+						<a class="__link-item" href="#contacts">Mint Price - FREE</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="__socials">
+				<ul class="header__nav">
+					<li data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="50">
+						<a class="__link-item" href="">
+							<svg class="__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M22.0617 6.93984C21.9422 6.49462 21.7078 6.0886 21.382 5.76243C21.0563 5.43625 20.6505 5.20136 20.2055 5.08125C18.5672 4.64063 12 4.64062 12 4.64062C12 4.64062 5.43281 4.64062 3.79453 5.07891C3.34927 5.19862 2.94334 5.43339 2.61751 5.75962C2.29169 6.08586 2.05744 6.49208 1.93828 6.9375C1.5 8.57812 1.5 12 1.5 12C1.5 12 1.5 15.4219 1.93828 17.0602C2.17969 17.9648 2.89219 18.6773 3.79453 18.9188C5.43281 19.3594 12 19.3594 12 19.3594C12 19.3594 18.5672 19.3594 20.2055 18.9188C21.1102 18.6773 21.8203 17.9648 22.0617 17.0602C22.5 15.4219 22.5 12 22.5 12C22.5 12 22.5 8.57813 22.0617 6.93984ZM9.91406 15.1406V8.85938L15.3516 11.9766L9.91406 15.1406Z"
+									fill="" />
+							</svg>
+						</a>
+					</li>
+					<li data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="150">
+						<a class="__link-item" href="">
+							<svg class="__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M21.7499 5.96017C21.0327 6.26954 20.2522 6.4922 19.4483 6.57892C20.283 6.08306 20.908 5.2997 21.2061 4.37579C20.4229 4.8417 19.5649 5.16841 18.6702 5.34142C18.2962 4.94163 17.844 4.62315 17.3415 4.40581C16.8391 4.18847 16.2973 4.07693 15.7499 4.07813C13.5351 4.07813 11.7538 5.87345 11.7538 8.07657C11.7538 8.38595 11.7913 8.69532 11.8522 8.99298C8.53584 8.81954 5.57803 7.23517 3.61162 4.80939C3.25332 5.42137 3.06556 6.1182 3.06787 6.82735C3.06787 8.21486 3.77334 9.43829 4.84912 10.1578C4.21515 10.1329 3.59602 9.9586 3.04209 9.64923V9.69845C3.04209 11.6414 4.41553 13.2516 6.24599 13.6219C5.9023 13.7112 5.54875 13.7568 5.19365 13.7578C4.93349 13.7578 4.6874 13.732 4.43896 13.6969C4.94521 15.2813 6.41943 16.432 8.1749 16.4695C6.80146 17.5453 5.08115 18.1781 3.21318 18.1781C2.87803 18.1781 2.56865 18.1664 2.24756 18.1289C4.01943 19.2656 6.12178 19.9219 8.38584 19.9219C15.7358 19.9219 19.7577 13.8328 19.7577 8.54767C19.7577 8.37423 19.7577 8.20079 19.746 8.02736C20.5241 7.45782 21.2061 6.75235 21.7499 5.96017Z"
+									fill="" />
+							</svg>
+						</a>
+					</li>
+					<li data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="250">
+						<a class="__link-item" href="">
+							<svg class="__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M14.8199 4.25977C14.6213 4.61545 14.4443 4.98279 14.2899 5.35977C12.7727 5.11982 11.2272 5.11982 9.70992 5.35977C9.55551 4.98279 9.37852 4.61545 9.17992 4.25977C7.75071 4.50397 6.36132 4.9413 5.04992 5.55977C2.70486 8.94405 1.64135 13.0527 2.04992 17.1498C3.57816 18.2986 5.29338 19.1748 7.11992 19.7398C7.53583 19.1904 7.90702 18.6085 8.22992 17.9998C7.63399 17.78 7.06121 17.502 6.51992 17.1698C6.66838 17.071 6.80882 16.9606 6.93992 16.8398C8.51838 17.6001 10.2479 17.9949 11.9999 17.9949C13.752 17.9949 15.4815 17.6001 17.0599 16.8398C17.1999 16.9598 17.3399 17.0698 17.4799 17.1698C16.9357 17.4994 16.3635 17.7805 15.7699 18.0098C16.0794 18.6323 16.4407 19.2277 16.8499 19.7898C18.6742 19.2268 20.3864 18.3504 21.9099 17.1998C22.3283 13.102 21.2639 8.98995 18.9099 5.60977C17.6133 4.9785 16.2376 4.52444 14.8199 4.25977ZM8.67992 14.8098C8.1795 14.7738 7.71246 14.5455 7.37684 14.1725C7.04122 13.7996 6.86311 13.3112 6.87992 12.8098C6.86058 12.3077 7.03781 11.8178 7.37393 11.4444C7.71006 11.0709 8.17858 10.8432 8.67992 10.8098C9.18126 10.8432 9.64978 11.0709 9.98591 11.4444C10.322 11.8178 10.4993 12.3077 10.4799 12.8098C10.4993 13.3118 10.322 13.8017 9.98591 14.1752C9.64978 14.5486 9.18126 14.7763 8.67992 14.8098ZM15.3199 14.8098C14.8195 14.7738 14.3525 14.5455 14.0168 14.1725C13.6812 13.7996 13.5031 13.3112 13.5199 12.8098C13.5006 12.3077 13.6778 11.8178 14.0139 11.4444C14.3501 11.0709 14.8186 10.8432 15.3199 10.8098C15.8222 10.8407 16.2922 11.0677 16.6289 11.4417C16.9655 11.8158 17.1418 12.307 17.1199 12.8098C17.1418 13.3125 16.9655 13.8038 16.6289 14.1778C16.2922 14.5519 15.8222 14.7788 15.3199 14.8098Z"
+									fill="" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Мобильное меню -->
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+					<span></span>
+				</label>
+				<ul class="menu__box">
+					<li class="menu__item">
+						<picture>
+							<source srcset="assets\images\png\logo.png" media="(max-width: 278px)" />
+							<img width="50%" src="assets\images\png\logo.png" alt="logo">
+						</picture>
+					</li>
+					<li><a class="menu__item" href="#roadmap">Роадпам</a></li>
+					<li><a class="menu__item" href="#team">Тим</a></li>
+					<li><a class="menu__item" href="#que-ans">Вопрос — ответ</a></li>
+					<li><a class="menu__item" href="#contacts">Контактс</a></li>
+					<li class="menu__item">
+						<a href="">
+							<svg class="__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M22.0617 6.93984C21.9422 6.49462 21.7078 6.0886 21.382 5.76243C21.0563 5.43625 20.6505 5.20136 20.2055 5.08125C18.5672 4.64063 12 4.64062 12 4.64062C12 4.64062 5.43281 4.64062 3.79453 5.07891C3.34927 5.19862 2.94334 5.43339 2.61751 5.75962C2.29169 6.08586 2.05744 6.49208 1.93828 6.9375C1.5 8.57812 1.5 12 1.5 12C1.5 12 1.5 15.4219 1.93828 17.0602C2.17969 17.9648 2.89219 18.6773 3.79453 18.9188C5.43281 19.3594 12 19.3594 12 19.3594C12 19.3594 18.5672 19.3594 20.2055 18.9188C21.1102 18.6773 21.8203 17.9648 22.0617 17.0602C22.5 15.4219 22.5 12 22.5 12C22.5 12 22.5 8.57813 22.0617 6.93984ZM9.91406 15.1406V8.85938L15.3516 11.9766L9.91406 15.1406Z"
+									fill="" />
+							</svg>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="">
+							<svg class="__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M21.7499 5.96017C21.0327 6.26954 20.2522 6.4922 19.4483 6.57892C20.283 6.08306 20.908 5.2997 21.2061 4.37579C20.4229 4.8417 19.5649 5.16841 18.6702 5.34142C18.2962 4.94163 17.844 4.62315 17.3415 4.40581C16.8391 4.18847 16.2973 4.07693 15.7499 4.07813C13.5351 4.07813 11.7538 5.87345 11.7538 8.07657C11.7538 8.38595 11.7913 8.69532 11.8522 8.99298C8.53584 8.81954 5.57803 7.23517 3.61162 4.80939C3.25332 5.42137 3.06556 6.1182 3.06787 6.82735C3.06787 8.21486 3.77334 9.43829 4.84912 10.1578C4.21515 10.1329 3.59602 9.9586 3.04209 9.64923V9.69845C3.04209 11.6414 4.41553 13.2516 6.24599 13.6219C5.9023 13.7112 5.54875 13.7568 5.19365 13.7578C4.93349 13.7578 4.6874 13.732 4.43896 13.6969C4.94521 15.2813 6.41943 16.432 8.1749 16.4695C6.80146 17.5453 5.08115 18.1781 3.21318 18.1781C2.87803 18.1781 2.56865 18.1664 2.24756 18.1289C4.01943 19.2656 6.12178 19.9219 8.38584 19.9219C15.7358 19.9219 19.7577 13.8328 19.7577 8.54767C19.7577 8.37423 19.7577 8.20079 19.746 8.02736C20.5241 7.45782 21.2061 6.75235 21.7499 5.96017Z"
+									fill="" />
+							</svg>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="">
+							<svg class="__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M14.8199 4.25977C14.6213 4.61545 14.4443 4.98279 14.2899 5.35977C12.7727 5.11982 11.2272 5.11982 9.70992 5.35977C9.55551 4.98279 9.37852 4.61545 9.17992 4.25977C7.75071 4.50397 6.36132 4.9413 5.04992 5.55977C2.70486 8.94405 1.64135 13.0527 2.04992 17.1498C3.57816 18.2986 5.29338 19.1748 7.11992 19.7398C7.53583 19.1904 7.90702 18.6085 8.22992 17.9998C7.63399 17.78 7.06121 17.502 6.51992 17.1698C6.66838 17.071 6.80882 16.9606 6.93992 16.8398C8.51838 17.6001 10.2479 17.9949 11.9999 17.9949C13.752 17.9949 15.4815 17.6001 17.0599 16.8398C17.1999 16.9598 17.3399 17.0698 17.4799 17.1698C16.9357 17.4994 16.3635 17.7805 15.7699 18.0098C16.0794 18.6323 16.4407 19.2277 16.8499 19.7898C18.6742 19.2268 20.3864 18.3504 21.9099 17.1998C22.3283 13.102 21.2639 8.98995 18.9099 5.60977C17.6133 4.9785 16.2376 4.52444 14.8199 4.25977ZM8.67992 14.8098C8.1795 14.7738 7.71246 14.5455 7.37684 14.1725C7.04122 13.7996 6.86311 13.3112 6.87992 12.8098C6.86058 12.3077 7.03781 11.8178 7.37393 11.4444C7.71006 11.0709 8.17858 10.8432 8.67992 10.8098C9.18126 10.8432 9.64978 11.0709 9.98591 11.4444C10.322 11.8178 10.4993 12.3077 10.4799 12.8098C10.4993 13.3118 10.322 13.8017 9.98591 14.1752C9.64978 14.5486 9.18126 14.7763 8.67992 14.8098ZM15.3199 14.8098C14.8195 14.7738 14.3525 14.5455 14.0168 14.1725C13.6812 13.7996 13.5031 13.3112 13.5199 12.8098C13.5006 12.3077 13.6778 11.8178 14.0139 11.4444C14.3501 11.0709 14.8186 10.8432 15.3199 10.8098C15.8222 10.8407 16.2922 11.0677 16.6289 11.4417C16.9655 11.8158 17.1418 12.307 17.1199 12.8098C17.1418 13.3125 16.9655 13.8038 16.6289 14.1778C16.2922 14.5519 15.8222 14.7788 15.3199 14.8098Z"
+									fill="" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+	</div>
+
+	<!-- Контент -->
+
+	<!-- Первый экран hero -->
+	<div class="hero wrap">
+		<section class="__hero-left" data-aos="fade-right" data-aos-duration="2000">
+			<h1>
+				THIEVESLIST <br> <b class="h1-heading">NFT</b>
+			</h1>
+			<p style="font-size: 20px;">
+				first free mint with a roadmap that isn't bullshit
+			</p>
+			<button class="__button--filled">
+				Check on OpenSea (coming soon)
+			</button>
+		</section>
+		<section class="__hero-right">
+			<picture>
+				<source srcset="assets\images\jpg\cartel-image@2x.jpg" media="(max-width: 470px)" />
+				<img data-aos="zoom-in" data-aos-duration="500" width="470px"  height="700px" src="Screenshot_20220724-143846.png" />
+			</picture>
+		</section>
+	</div>
+
+	<!-- Второй экран second -->
+	<div class="second">
+		<div class="wrap">
+			<h2>
+				OVERVIEW          blablabla
+			</h2>
+			<div class="second__content">
+				<section class="second__img">
+					<picture>
+						<source srcset="assets\images\jpg\cartel-img@2x.jpg" media="(max-width: 370px)" />
+						<img data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center" width="370px"
+							height="500px" src="Screenshot_20220724-143754.png" />
+					</picture>
+					<picture class="back-pic">
+						<source srcset="assets\images\jpg\cartel-image@2x.jpg" media="(max-width: 370px)" />
+						<img data-aos="fade-in" data-aos-duration="1000" width="370px" height="500px"
+							src="Screenshot_20220724-144014.png" />
+					</picture>
+
+				</section>
+				<section class="second__text" data-aos="fade-left" data-aos-offset="10" data-aos-delay="100"
+					data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+					<h3>
+						blablabla
+					</h3>
+					<h2 >
+						Theiveslist is an amazing project that has taken the current Nft space by storm <br>
+						with its overly capable team of just ten moderators. <br><br>
+						Its a project that immediately catches the eye of any and everybody because of its beautiful and uncommon art. <br><br>
+						you can tell that its different from how it sets itself ahead other free mint projects <br><br>
+						 and also judging by the teams organisation, the project activities <br><br>
+						and even the numerous plans the team has for the eventual holders.
+					</h2>
+					<h3>
+						I'm so  bullish on this project! and you should be too!!!  <br> <br>
+						LETS FUCKING GO TO THE MOON  <br>and steal it while we're there lol.
+					</h3>
+				</section>
+			</div>
+		</div>
+	</div>
+
+
+				
+
+	<!-- Шестой экран team -->
+	<div class="wrap">
+		<div id="team" class="team">
+			
+			<h1>Sneak-peeks:</h1>
+			<div class="team__list">
+				<div class="team__list_card">
+					<picture>
+						<source srcset="assets\images\jpg\rick@2x.jpg" media="(max-width: 310px)" />
+						<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" width="310px" height="380px"
+							src="Screenshot_20220724-153313.png" />
+					</picture>
+					<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+						<h4></h4>
+						<span></span>
+					</section>
+				</div>
+				<div class="team__list_card">
+					<picture>
+						<source srcset="assets\images\jpg\loui@2x.jpg" media="(max-width: 310px)" />
+						<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" width="310px" height="380px"
+							src="Screenshot_20220724-153330.png" />
+					</picture>
+					<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
+						<h4></h4>
+						<span></span>
+					</section>
+				</div>
+				<div class="team__list_card">
+					<picture>
+						<source srcset="assets\images\jpg\greg@2x.jpg" media="(max-width: 310px)" />
+						<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" width="310px" height="380px"
+							src="Screenshot_20220724-153345.png" />
+					</picture>
+					<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="600">
+						<h4></h4>
+						<span></span>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	 
+
+	<!-- Шестой экран team -->
+	<div class="wrap">
+		<div id="team" class="team">
+	
+			<div class="team__list">
+				<div class="team__list_card">
+					<picture>
+						<source srcset="assets\images\jpg\rick@2x.jpg" media="(max-width: 310px)" />
+						<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" width="310px" height="380px"
+							src="Screenshot_20220724-153410.png" />
+					</picture>
+					<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+						<h4></h4>
+						<span></span>
+					</section>
+				</div>
+				<div class="team__list_card">
+					<picture>
+						<source srcset="assets\images\jpg\loui@2x.jpg" media="(max-width: 310px)" />
+						<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" width="310px" height="380px"
+							src="Screenshot_20220724-153423.png" />
+					</picture>
+					<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
+						<h4></h4>
+						<span></span>
+					</section>
+				</div>
+				<div class="team__list_card">
+					<picture>
+						<source srcset="assets\images\jpg\greg@2x.jpg" media="(max-width: 310px)" />
+						<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" width="310px" height="380px"
+							src="Screenshot_20220724-153444.png" />
+					</picture>
+					<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="600">
+						<h4></h4>
+						<span></span>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div> 
+
+
+		<!-- Шестой экран team -->
+		<div class="wrap">
+			<div id="team" class="team">
+				
+				<div class="team__list">
+					<div class="team__list_card">
+						<picture>
+							<source srcset="assets\images\jpg\rick@2x.jpg" media="(max-width: 310px)" />
+							<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" width="310px" height="380px"
+								src="Screenshot_20220724-153457.png" />
+						</picture>
+						<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+							<h4></h4>
+							<span></span>
+						</section>
+					</div>
+					<div class="team__list_card">
+						<picture>
+							<source srcset="assets\images\jpg\loui@2x.jpg" media="(max-width: 310px)" />
+							<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" width="310px" height="380px"
+								src="Screenshot_20220724-153514.png" />
+						</picture>
+						<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
+							<h4></h4>
+							<span></span>
+						</section>
+					</div>
+					<div class="team__list_card">
+						<picture>
+							<source srcset="assets\images\jpg\greg@2x.jpg" media="(max-width: 310px)" />
+							<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" width="310px" height="380px"
+								src="Screenshot_20220724-153533.png" />
+						</picture>
+						<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="600">
+							<h4></h4>
+							<span></span>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		 
+		
+
+
+
+	<!-- Шестой экран team -->
+	<div class="wrap">
+		<div id="team" class="team">
+			
+			
+			<div class="team__list">
+				<div class="team__list_card">
+					<picture>
+						<source srcset="assets\images\jpg\rick@2x.jpg" media="(max-width: 310px)" />
+						<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" width="310px" height="380px"
+							src="Screenshot_20220724-153557.png" />
+					</picture>
+					<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+						<h4></h4>
+						<span></span>
+					</section>
+				</div>
+				<div class="team__list_card">
+					<picture>
+						<source srcset="assets\images\jpg\loui@2x.jpg" media="(max-width: 310px)" />
+						<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" width="310px" height="380px"
+							src="Screenshot_20220724-153607.png" />
+					</picture>
+					<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
+						<h4></h4>
+						<span></span>
+					</section>
+				</div>
+				<div class="team__list_card">
+					<picture>
+						<source srcset="assets\images\jpg\greg@2x.jpg" media="(max-width: 310px)" />
+						<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" width="310px" height="380px"
+							src="Screenshot_20220724-153618.png" />
+					</picture>
+					<section class="_card-desc" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="600">
+						<h4></h4>
+						<span></span>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- Девятый экран contacts -->
+	<div id="contacts" class="contacts">
+		<div class="wrap">
+			<div class="contacts__content" data-aos="zoom-in" data-aos-duration="2000">
+				
+				<button class="__button--outlined">
+					<a href="https://t.co/8emUDkXnkN"> Join the Discord!</a>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Подвал -->
+	<footer class="footer wrap">
+		<span class="copyright-text" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
+			©<b>Adriennedev</b>
+		</span>
+		<div class="footer__links">
+			<ul class="footer__links doc-pages">
+				<li data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+					<a class="__link-item" href=""> <a href="https://twitter.com/itami23?t=UILzCYWheCoRMMwLclbY5Q&s=09*l">contact me </a>  </a>
+				</li>
+				<li data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+					<a class="__link-item" href=""></a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="__socials">
+			<ul class="footer__links">
+				<li data-aos="fade-left" data-aos-easing="linear" data-aos-anchor-placement="top-bottom"
+					data-aos-duration="1000" data-aos-delay="50">
+					<a class="__link-item" href="">
+						<svg class="__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M22.0617 6.93984C21.9422 6.49462 21.7078 6.0886 21.382 5.76243C21.0563 5.43625 20.6505 5.20136 20.2055 5.08125C18.5672 4.64063 12 4.64062 12 4.64062C12 4.64062 5.43281 4.64062 3.79453 5.07891C3.34927 5.19862 2.94334 5.43339 2.61751 5.75962C2.29169 6.08586 2.05744 6.49208 1.93828 6.9375C1.5 8.57812 1.5 12 1.5 12C1.5 12 1.5 15.4219 1.93828 17.0602C2.17969 17.9648 2.89219 18.6773 3.79453 18.9188C5.43281 19.3594 12 19.3594 12 19.3594C12 19.3594 18.5672 19.3594 20.2055 18.9188C21.1102 18.6773 21.8203 17.9648 22.0617 17.0602C22.5 15.4219 22.5 12 22.5 12C22.5 12 22.5 8.57813 22.0617 6.93984ZM9.91406 15.1406V8.85938L15.3516 11.9766L9.91406 15.1406Z"
+								fill="" />
+						</svg>
+					</a>
+				</li>
+				<li data-aos="fade-left" data-aos-easing="linear" data-aos-anchor-placement="top-bottom"
+					data-aos-duration="1000" data-aos-delay="150">
+					<a class="__link-item" href="">
+						<svg class="__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M21.7499 5.96017C21.0327 6.26954 20.2522 6.4922 19.4483 6.57892C20.283 6.08306 20.908 5.2997 21.2061 4.37579C20.4229 4.8417 19.5649 5.16841 18.6702 5.34142C18.2962 4.94163 17.844 4.62315 17.3415 4.40581C16.8391 4.18847 16.2973 4.07693 15.7499 4.07813C13.5351 4.07813 11.7538 5.87345 11.7538 8.07657C11.7538 8.38595 11.7913 8.69532 11.8522 8.99298C8.53584 8.81954 5.57803 7.23517 3.61162 4.80939C3.25332 5.42137 3.06556 6.1182 3.06787 6.82735C3.06787 8.21486 3.77334 9.43829 4.84912 10.1578C4.21515 10.1329 3.59602 9.9586 3.04209 9.64923V9.69845C3.04209 11.6414 4.41553 13.2516 6.24599 13.6219C5.9023 13.7112 5.54875 13.7568 5.19365 13.7578C4.93349 13.7578 4.6874 13.732 4.43896 13.6969C4.94521 15.2813 6.41943 16.432 8.1749 16.4695C6.80146 17.5453 5.08115 18.1781 3.21318 18.1781C2.87803 18.1781 2.56865 18.1664 2.24756 18.1289C4.01943 19.2656 6.12178 19.9219 8.38584 19.9219C15.7358 19.9219 19.7577 13.8328 19.7577 8.54767C19.7577 8.37423 19.7577 8.20079 19.746 8.02736C20.5241 7.45782 21.2061 6.75235 21.7499 5.96017Z"
+								fill="" />
+						</svg>
+					</a>
+				</li>
+				<li data-aos="fade-left" data-aos-easing="linear" data-aos-anchor-placement="top-bottom"
+					data-aos-duration="1000" data-aos-delay="250">
+					<a class="__link-item" href="">
+						<svg class="__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M14.8199 4.25977C14.6213 4.61545 14.4443 4.98279 14.2899 5.35977C12.7727 5.11982 11.2272 5.11982 9.70992 5.35977C9.55551 4.98279 9.37852 4.61545 9.17992 4.25977C7.75071 4.50397 6.36132 4.9413 5.04992 5.55977C2.70486 8.94405 1.64135 13.0527 2.04992 17.1498C3.57816 18.2986 5.29338 19.1748 7.11992 19.7398C7.53583 19.1904 7.90702 18.6085 8.22992 17.9998C7.63399 17.78 7.06121 17.502 6.51992 17.1698C6.66838 17.071 6.80882 16.9606 6.93992 16.8398C8.51838 17.6001 10.2479 17.9949 11.9999 17.9949C13.752 17.9949 15.4815 17.6001 17.0599 16.8398C17.1999 16.9598 17.3399 17.0698 17.4799 17.1698C16.9357 17.4994 16.3635 17.7805 15.7699 18.0098C16.0794 18.6323 16.4407 19.2277 16.8499 19.7898C18.6742 19.2268 20.3864 18.3504 21.9099 17.1998C22.3283 13.102 21.2639 8.98995 18.9099 5.60977C17.6133 4.9785 16.2376 4.52444 14.8199 4.25977ZM8.67992 14.8098C8.1795 14.7738 7.71246 14.5455 7.37684 14.1725C7.04122 13.7996 6.86311 13.3112 6.87992 12.8098C6.86058 12.3077 7.03781 11.8178 7.37393 11.4444C7.71006 11.0709 8.17858 10.8432 8.67992 10.8098C9.18126 10.8432 9.64978 11.0709 9.98591 11.4444C10.322 11.8178 10.4993 12.3077 10.4799 12.8098C10.4993 13.3118 10.322 13.8017 9.98591 14.1752C9.64978 14.5486 9.18126 14.7763 8.67992 14.8098ZM15.3199 14.8098C14.8195 14.7738 14.3525 14.5455 14.0168 14.1725C13.6812 13.7996 13.5031 13.3112 13.5199 12.8098C13.5006 12.3077 13.6778 11.8178 14.0139 11.4444C14.3501 11.0709 14.8186 10.8432 15.3199 10.8098C15.8222 10.8407 16.2922 11.0677 16.6289 11.4417C16.9655 11.8158 17.1418 12.307 17.1199 12.8098C17.1418 13.3125 16.9655 13.8038 16.6289 14.1778C16.2922 14.5519 15.8222 14.7788 15.3199 14.8098Z"
+								fill="" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Подключение скрипта для кнопок +- в инпуте mintig -->
+	<script src="assets\js\minting-input\spinbox-input.js"></script>
+
+	<!-- Подключение скрипта для слайдера в roadmap -->
+	<script src="assets\js\roadmap-slider\flickity.pkgd.min.js"></script>
+
+	<!-- Инициализация с помощью ванильного JavaScript -->
+	<script src="assets\js\roadmap-slider\flickity-slider_init.js"></script>
+
+	<!-- Анимация элементов при скролле -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
